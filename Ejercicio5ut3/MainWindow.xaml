@@ -5,64 +5,131 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ejercicio5ut3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="450">
-    <Viewbox Stretch="Fill">
-        <Grid>
+        Title="MainWindow"
+        Height="600"
+        Width="450">
+
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="100" />
 
         </Grid.RowDefinitions>
-       
-            <TextBox  Grid.Row="0"
-                      Grid.Column="0"
-                      Grid.ColumnSpan="3"
-                      Grid.RowSpan="2"
-                      x:Name="texto"
-                      Margin="5"/>
-            <Button Grid.Column="1"
-                    Grid.Row="3"
-                    Content="1"
-                    Tag="1" />
-            <Button Grid.Column="2"
-                    Grid.Row="3"
-                    Content="2"
-                    Tag="2" />
-            <Button Grid.Column="3"
-                    Grid.Row="3"
-                    Content="3"
-                    Tag="3" />
-            <Button Grid.Column="1"
-                    Grid.Row="4"
-                    Content="4"
-                    Tag="4" />
-            <Button Grid.Column="2"
-                    Grid.Row="4"
-                    Content="5"
-                    Tag="5" />
-            <Button Grid.Column="3"
-                    Grid.Row="4"
-                    Content="6"
-                    Tag="6" />
-            <Button Grid.Column="1"
-                    Grid.Row="3"
-                    Content="1"
-                    Tag="1" />
-            <Button Grid.Column="1"
-                    Grid.Row="3"
-                    Content="1"
-                    Tag="1" />
+
+        <Border BorderThickness="3"
+                BorderBrush="Black"
+                Grid.Row="0"
+                 Grid.Column="0"
+                 Grid.RowSpan="2"
+                 Grid.ColumnSpan="3"
+                 Margin="5">
+            
+                
+                <Viewbox>
+                    <TextBlock x:Name="texto"/>
+                </Viewbox>
+
+        </Border>
+
+        <Button     Grid.Column="0"
+                    Grid.Row="2"
+                    Tag="1"
+                    Margin="5"
+                    Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="1" />
+            </Viewbox>
+        </Button>
+        <Button Grid.Column="1"
+                Grid.Row="2"
+                Tag="2"
+                Margin="5"
+                Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="2" />
+            </Viewbox>
+        </Button>
+        <Button Grid.Column="2"
+                Grid.Row="2"
+                Tag="3"
+                Margin="5"
+                Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="3" />
+            </Viewbox>
+        </Button>
+        <Button Grid.Column="0"
+                Grid.Row="3"
+                Tag="4"
+                Margin="5"
+                Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="4" />
+            </Viewbox>
+        </Button>
+        <Button Grid.Column="1"
+                Grid.Row="3"
+                Tag="5"
+                Margin="5"
+                Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="5" />
+            </Viewbox>
+        </Button>
+        <Button Grid.Column="2"
+                Grid.Row="3"
+                Tag="6"
+                Margin="5"
+                Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="6" />
+            </Viewbox>
+        </Button>
+        <Button Grid.Column="0"
+                Grid.Row="4"
+                Tag="7"
+                Margin="5"
+                Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="7" />
+            </Viewbox>
+        </Button>
+        <Button Grid.Column="1"
+                Grid.Row="4"
+                Tag="8"
+                Margin="5"
+                Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="8" />
+            </Viewbox>
+        </Button>
+        <Button Grid.Column="2"
+                Grid.Row="4"
+                Tag="9"
+                Margin="5"
+                Click="Button_Click">
+            <Viewbox>
+                <TextBlock Text="9" />
+            </Viewbox>
+        </Button>
+        <Button Grid.Column="0"
+                Grid.Row="5"
+                Grid.ColumnSpan="3"
+                Tag="0"
+                Content="0"
+                Margin="5"
+                FontSize="40"
+                Click="Button_Click" />
 
 
-        </Grid>
-    </Viewbox>
+    </Grid>
 </Window>
