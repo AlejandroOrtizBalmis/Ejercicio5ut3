@@ -14,16 +14,16 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
             <RowDefinition Height="100" />
 
         </Grid.RowDefinitions>
@@ -37,8 +37,9 @@
                  Margin="5">
             
                 
-                <Viewbox>
-                    <TextBlock x:Name="texto"/>
+                <Viewbox HorizontalAlignment="Right">
+                    <TextBlock x:Name="texto"
+                               TextAlignment="Right"/>
                 </Viewbox>
 
         </Border>
